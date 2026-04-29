@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>CV Kenneth Ariel Herrera 2026</title>
+    <style>
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #e8eef5;
+        color: #172033;
+        font-family: "Segoe UI", Arial, sans-serif;
+        line-height: 1.34;
+      }
+
+      .page {
+        display: grid;
+        grid-template-columns: 34% 66%;
+        width: 210mm;
+        height: 297mm;
+        overflow: hidden;
+        margin: 0 auto;
+        background: #ffffff;
+      }
+
+      aside {
+        position: relative;
+        display: grid;
+        grid-template-rows: auto auto auto auto auto auto 1fr auto;
+        align-content: start;
+        padding: 22px 20px 20px;
+        background: #dbe8f4;
+        color: #24405c;
+      }
+
+      main {
+        padding: 28px 32px;
+      }
+
+      .avatar {
+        display: block;
+        width: 116px;
+        height: 116px;
+        margin: 0 auto 14px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid #ffffff;
+        box-shadow: 0 12px 30px rgba(36, 64, 92, 0.18);
+      }
+
+      .side-name {
+        margin: 0 0 4px;
+        font-size: 18px;
+        line-height: 1.1;
+        color: #162234;
+        text-align: center;
+      }
+
+      .side-role {
+        margin: 0 0 14px;
+        color: #126c8f;
+        font-size: 11px;
+        font-weight: 800;
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+      .name {
+        margin: 0 0 8px;
+        color: #172033;
+        font-size: 38px;
+        line-height: 0.98;
+        letter-spacing: 0;
+      }
+
+      .headline {
+        margin: 0 0 18px;
+        color: #126c8f;
+        font-size: 12px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        margin: 17px 0 8px;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #b8cbe0;
+        color: #315f86;
+        font-size: 12px;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+
+      h3 {
+        margin: 0 0 4px;
+        color: #172033;
+        font-size: 12px;
+      }
+
+      p {
+        margin: 0 0 7px;
+        font-size: 9.4px;
+      }
+
+      ul {
+        margin: 6px 0 0;
+        padding-left: 16px;
+      }
+
+      li {
+        margin-bottom: 3px;
+        font-size: 9.2px;
+      }
+
+      .contact-list,
+      .language-list {
+        display: grid;
+        gap: 6px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .contact-list li,
+      .language-list li {
+        margin: 0;
+        font-size: 9.2px;
+      }
+
+      .skill-list {
+        display: grid;
+        gap: 6px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .skill-list > li {
+        display: grid;
+        grid-template-columns: 19px 1fr;
+        gap: 6px;
+        margin: 0;
+      }
+
+      .skill-ico {
+        display: grid;
+        width: 18px;
+        height: 18px;
+        place-items: center;
+        border-radius: 50%;
+        background: #ffffff;
+        color: #126c8f;
+        font-size: 7px;
+        font-weight: 900;
+      }
+
+      .skill-title {
+        display: block;
+        margin-bottom: 1px;
+        color: #162234;
+        font-size: 9.2px;
+        font-weight: 900;
+      }
+
+      .skill-items {
+        display: grid;
+        gap: 1px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .skill-items li {
+        margin: 0;
+        color: #24405c;
+        font-size: 8px;
+      }
+
+      .tag-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-top: 6px;
+      }
+
+      .tag {
+        padding: 3px 6px;
+        border-radius: 999px;
+        background: #ffffff;
+        color: #315f86;
+        font-size: 8px;
+        font-weight: 800;
+      }
+
+      .summary {
+        color: #536579;
+        font-size: 9.6px;
+      }
+
+      .item {
+        position: relative;
+        margin-bottom: 11px;
+        padding-left: 22px;
+      }
+
+      .item::before {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: 0;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: #126c8f;
+      }
+
+      .item::after {
+        content: "";
+        position: absolute;
+        top: 16px;
+        bottom: -18px;
+        left: 4px;
+        width: 1px;
+        background: #b8cbe0;
+      }
+
+      .item:last-child::after {
+        display: none;
+      }
+
+      .date {
+        display: block;
+        margin-bottom: 4px;
+        color: #126c8f;
+        font-size: 9px;
+        font-weight: 900;
+      }
+
+      .mini-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 7px;
+      }
+
+      .mini-card {
+        padding: 7px 8px;
+        border: 1px solid #d8e4ef;
+        border-radius: 6px;
+        background: #f7fafd;
+      }
+
+      .mini-card strong {
+        display: block;
+        margin-bottom: 3px;
+        font-size: 9px;
+        color: #172033;
+      }
+
+      .signature {
+        display: block;
+        width: 94px;
+        margin: 10px auto 0;
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <aside>
+        <img class="avatar" src="../assets/perfil-kherrera-hnl.png" alt="Kenneth Herrera" />
+        <h1 class="side-name">Kenneth Ariel Herrera</h1>
+        <p class="side-role">Web & Cloud Developer</p>
+
+        <h2>Contacto</h2>
+        <ul class="contact-list">
+          <li>kenher822@gmail.com</li>
+          <li>GitHub personal</li>
+          <li>Nicaragua</li>
+        </ul>
+
+        <h2>Skills</h2>
+        <ul class="skill-list">
+          <li>
+            <span class="skill-ico">&lt;/&gt;</span>
+            <div>
+              <span class="skill-title">Desarrollo</span>
+              <ul class="skill-items">
+                <li>HTML, CSS, JavaScript</li>
+                <li>Go, C#, .NET</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <span class="skill-ico">AZ</span>
+            <div>
+              <span class="skill-title">Cloud</span>
+              <ul class="skill-items">
+                <li>Azure DevOps, Key Vault</li>
+                <li>Blob Storage, Redis Cache</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <span class="skill-ico">CI</span>
+            <div>
+              <span class="skill-title">CI/CD</span>
+              <ul class="skill-items">
+                <li>Azure Pipelines</li>
+                <li>GitHub Actions, Docker</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <span class="skill-ico">K8</span>
+            <div>
+              <span class="skill-title">Infraestructura</span>
+              <ul class="skill-items">
+                <li>Kubernetes, Terraform</li>
+                <li>dev / qa / preprod / prod</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <span class="skill-ico">DB</span>
+            <div>
+              <span class="skill-title">Datos</span>
+              <ul class="skill-items">
+                <li>SQL Server, PostgreSQL</li>
+                <li>MySQL, Redis</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <span class="skill-ico">AI</span>
+            <div>
+              <span class="skill-title">IA aplicada</span>
+              <ul class="skill-items">
+                <li>Agentes, MCPs</li>
+                <li>skills, rules, commands</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+        <h2>Tecnologias</h2>
+        <div class="tag-list">
+          <span class="tag">Azure</span>
+          <span class="tag">Go</span>
+          <span class="tag">.NET</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Kubernetes</span>
+          <span class="tag">Terraform</span>
+          <span class="tag">GitHub Actions</span>
+          <span class="tag">MCP</span>
+          <span class="tag">QGIS</span>
+        </div>
+
+        <h2>Idiomas</h2>
+        <ul class="language-list">
+          <li>Espa&ntilde;ol: Nativo</li>
+          <li>Ingles: Tecnico</li>
+        </ul>
+
+        <img class="signature" src="../assets/firma-kah.png" alt="Firma" />
+      </aside>
+
+      <main>
+        <h1 class="name">Kenneth Ariel<br />Herrera</h1>
+        <p class="headline">Desarrollador Web | Cloud | Azure DevOps | IA aplicada</p>
+
+        <h2>Perfil</h2>
+        <p class="summary">
+          Ingeniero en Sistemas con experiencia reciente en desarrollo de aplicaciones web,
+          microservicios, integraciones cloud, DevOps y automatizacion tecnica dentro del ecosistema
+          HypernovaLabs/HNL. Actualmente complemento mi perfil con IA aplicada al desarrollo mediante
+          agentes, MCPs, skills, rules y comandos para acelerar analisis, documentacion, soporte y
+          troubleshooting.
+        </p>
+
+        <h2>Experiencia</h2>
+        <section class="item">
+          <span class="date">2023 - Actualidad</span>
+          <h3>HypernovaLabs / HNL - Desarrollador Web & Cloud</h3>
+          <p>
+            Desarrollo y mantenimiento de aplicaciones, servicios y herramientas internas para el
+            ecosistema Aludra/HNL, con participacion en backend, frontend, soporte tecnico avanzado,
+            automatizacion y despliegues.
+          </p>
+          <ul>
+            <li>Microservicios Go y .NET para procesos de facturacion electronica.</li>
+            <li>Integraciones con Azure Key Vault, Blob Storage, Redis Cache y SQL Server.</li>
+            <li>CI/CD con Azure DevOps, Azure Pipelines y GitHub Actions.</li>
+            <li>Docker, Kubernetes, Terraform, Application Insights, logs y diagnostico.</li>
+            <li>IA aplicada con agentes, MCPs, skills, rules, commands y prompts tecnicos.</li>
+          </ul>
+        </section>
+
+        <section class="item">
+          <span class="date">2016 - 2022</span>
+          <h3>INIFOM - Analista Desarrollador</h3>
+          <p>
+            Fortalecimiento de soluciones informaticas para gestion municipal, sistemas de apoyo
+            institucional y plataformas orientadas a informacion territorial, planificacion y procesos
+            administrativos.
+          </p>
+        </section>
+
+        <section class="item">
+          <span class="date">2009 - 2015</span>
+          <h3>Intendencia de la Propiedad / PGR-IP - Analista de Sistemas</h3>
+          <p>
+            Administracion y soporte de informacion para PRODEP, con enfoque en datos, cartografia,
+            trazabilidad documental y procesos de titulacion.
+          </p>
+        </section>
+
+        <section class="item">
+          <span class="date">2008 - 2009</span>
+          <h3>Cuenta Reto del Milenio / MCA - Responsable SIG y Cartografia</h3>
+          <p>
+            Administracion de informacion geografica rural y urbana, control de calidad cartografico y
+            cruces con informacion alfanumerica.
+          </p>
+        </section>
+
+        <section class="item">
+          <span class="date">2005 - 2007</span>
+          <h3>DESCASA - Coordinador del Area de Informatica</h3>
+          <p>
+            Gestion de informacion catastral, bases de datos, cartografia y soporte tecnico a equipos
+            operativos.
+          </p>
+        </section>
+
+        <h2>Educacion y Certificaciones</h2>
+        <div class="mini-grid">
+          <div class="mini-card">
+            <strong>Microsoft Azure Fundamentals</strong>
+            INATEC, 60 horas, 2023
+          </div>
+          <div class="mini-card">
+            <strong>Geoportales con QGIS/PostGIS</strong>
+            CAEG, 24 horas, 2023
+          </div>
+          <div class="mini-card">
+            <strong>Ingeniero en Sistemas</strong>
+            Universidad Nacional de Ingenieria
+          </div>
+          <div class="mini-card">
+            <strong>Diplomado en Desarrollo Agil Web</strong>
+            UPOLI, 2017
+          </div>
+          <div class="mini-card">
+            <strong>PCEP Python Programmer</strong>
+            Certified Entry-Level, 2022
+          </div>
+          <div class="mini-card">
+            <strong>Tecnico Medio Operador de Computadoras</strong>
+            Formacion tecnica
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
