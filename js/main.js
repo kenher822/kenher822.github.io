@@ -5,7 +5,7 @@ const skillCards = document.querySelectorAll(".skill-card");
 const revealItems = document.querySelectorAll(".reveal");
 
 const storedTheme = localStorage.getItem("theme");
-if (storedTheme === "dark") {
+if (storedTheme === null || storedTheme === "dark") {
   document.body.classList.add("dark");
 }
 
