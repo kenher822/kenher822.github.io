@@ -982,3 +982,16 @@ h3 {
     flex-direction: column;
   }
 }
+
+.project-card .project-date {
+  margin: 0 0 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  opacity: 0.75;
+}
+
+.project-card .project-tech {
+  margin-top: 12px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
