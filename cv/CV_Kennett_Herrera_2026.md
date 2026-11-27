@@ -45,7 +45,7 @@ Ingeniero en Sistemas con más de 20 años en tecnología. Desde 2023 construyo 
 
 ### Intendencia de la Propiedad / PGR-IP
 
-**Analista de Sistemas de Informacion | 2009 - 2015**
+**Analista de Sistemas de Informacion | 2009 - 2016**
 
 - Administracion de informacion y cartografia en el Proyecto de Ordenamiento de la Propiedad PRODEP.
 - Soporte a procesos de titulacion, solvencias y ordenamiento territorial.
