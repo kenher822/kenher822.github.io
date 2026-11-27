@@ -1,30 +1,22 @@
-# Kenneth Ariel Herrera
+# Kennett Ariel Herrera
 
-**Desarrollador Web & Cloud | Azure DevOps | IA aplicada al desarrollo de software**  
+**Senior Full Stack Engineer | Go, .NET, React, TypeScript | Azure**  
 Correo: kenher822@gmail.com
 
 ## Perfil Profesional
 
-Ingeniero en Sistemas con experiencia reciente en desarrollo de aplicaciones web, microservicios,
-integraciones cloud y automatizacion de procesos tecnicos dentro del ecosistema HypernovaLabs/HNL.
-He trabajado con repositorios, pipelines, servicios Azure, contenedores, bases de datos, telemetria
-y flujos de soporte para plataformas de facturacion electronica.
-
-Actualmente complemento mi perfil tecnico con desarrollo asistido por IA: agentes, MCPs, skills,
-rules, commands, prompts tecnicos y documentacion operativa para acelerar analisis de codigo,
-troubleshooting, pruebas, migraciones y mantenimiento de repositorios.
+Ingeniero en Sistemas con más de 20 años en tecnología. Desde 2023 construyo servicios en Go y .NET e interfaces en React y TypeScript sobre Azure, con desarrollo asistido por IA, y avanzo hacia productos con inteligencia artificial.
 
 ## Experiencia Reciente
 
-### HypernovaLabs / HNL
+### Hypernova Labs
 
-**Desarrollador Web & Cloud**  
+**Desarrollador Backend**  
 **2023 - Actualidad**
 
-- Desarrollo y mantenimiento de servicios backend, herramientas web y componentes del ecosistema
-  Aludra/HNL.
-- Participacion en microservicios Go y .NET orientados a facturacion electronica, integraciones PAC/DGI,
-  certificados digitales, XML, colas, reintentos y procesos multitenant.
+- Desarrollo de servicios backend y herramientas web de una plataforma multiempresa de facturación electrónica.
+- Interfaces en React y TypeScript y APIs en Python (FastAPI) para monitoreo interno.
+- Participacion en microservicios Go y .NET con integraciones externas, certificados digitales, XML, colas, reintentos y procesos multiempresa.
 - Manejo de Azure DevOps, Azure Pipelines y GitHub Actions para flujos CI/CD.
 - Trabajo con Azure Key Vault, Blob Storage, Redis Cache, SQL Server y Application Insights.
 - Uso de Docker, Kubernetes y Terraform para despliegues, infraestructura y configuracion por ambientes.
@@ -77,7 +69,7 @@ troubleshooting, pruebas, migraciones y mantenimiento de repositorios.
 
 ## Skills Tecnicas
 
-**Desarrollo:** HTML, CSS, JavaScript, Go, C#, .NET, APIs REST, microservicios.  
+**Desarrollo:** Go, C#, .NET, React, TypeScript, JavaScript, HTML, CSS, Python, FastAPI, APIs REST, microservicios.  
 **Cloud:** Azure DevOps, Azure Key Vault, Azure Blob Storage, Azure Redis Cache, Application Insights.  
 **CI/CD:** Azure Pipelines, GitHub Actions, Git, GitHub, estrategias por ramas.  
 **Infraestructura:** Docker, Kubernetes, Terraform, ambientes dev/qa/preprod/prod.  
@@ -87,6 +79,6 @@ troubleshooting, pruebas, migraciones y mantenimiento de repositorios.
 
 ## Enfoque 2026
 
-Busco consolidar un perfil profesional orientado a desarrollo web, cloud, DevOps e IA aplicada,
+Busco consolidar un perfil full stack con productos de inteligencia artificial,
 aprovechando mi experiencia previa en sistemas complejos, datos institucionales y soporte tecnico
 para construir soluciones confiables, documentadas y listas para produccion.

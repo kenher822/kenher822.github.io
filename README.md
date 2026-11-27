@@ -1,4 +1,4 @@
-# Portafolio Kenneth Ariel Herrera
+# Portafolio Kennett Ariel Herrera
 
 Sitio personal estatico creado con HTML, CSS y JavaScript para publicar en GitHub Pages.
 
@@ -8,10 +8,10 @@ Sitio personal estatico creado con HTML, CSS y JavaScript para publicar en GitHu
 - `css/styles.css`: estilos responsive y tema claro/oscuro.
 - `js/main.js`: filtros de skills, animaciones y cambio de tema.
 - `assets/`: imagen profesional y firma.
-- `cv/CV_Kenneth_Herrera_2026.md`: borrador inicial del CV 2026.
-- `cv/CV_Kenneth_Herrera_2026.docx`: version editable generada desde el borrador.
-- `cv/CV_Kenneth_Herrera_2026.pdf`: version descargable usada por la pagina.
-- `cv/CV_Kenneth_Herrera_2026_Professional.html`: fuente visual del PDF profesional.
+- `cv/CV_Kennett_Herrera_2026.md`: borrador inicial del CV 2026.
+- `cv/CV_Kennett_Herrera_2026.docx`: version editable generada desde el borrador.
+- `cv/CV_Kennett_Herrera_2026.pdf`: version descargable usada por la pagina.
+- `cv/CV_Kennett_Herrera_2026_Professional.html`: fuente visual del PDF profesional.
 
 ## Publicacion En GitHub Pages
 
@@ -20,4 +20,4 @@ Sitio personal estatico creado con HTML, CSS y JavaScript para publicar en GitHu
 3. Activar GitHub Pages desde `Settings > Pages`.
 4. Seleccionar `Deploy from a branch`, rama `main`, carpeta `/root`.
 
-El boton principal de la pagina descarga `cv/CV_Kenneth_Herrera_2026.pdf`.
+El boton principal de la pagina descarga `cv/CV_Kennett_Herrera_2026.pdf`.
