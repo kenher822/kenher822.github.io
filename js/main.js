@@ -1,6 +1,6 @@
 const header = document.querySelector(".site-header");
 const themeToggle = document.querySelector(".theme-toggle");
-const filterButtons = document.querySelectorAll(".filter");
+const filterButtons = document.querySelectorAll(".skill-filters .filter");
 const skillCards = document.querySelectorAll(".skill-card");
 const revealItems = document.querySelectorAll(".reveal");
 
@@ -53,3 +53,21 @@ const observer = new IntersectionObserver(
 );
 
 revealItems.forEach((item) => observer.observe(item));
+
+const projectButtons = document.querySelectorAll(".project-filter");
+const projectCards = document.querySelectorAll(".project-card");
+
+projectButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const filter = button.dataset.projectFilter;
+
+    projectButtons.forEach((item) => {
+      item.classList.toggle("active", item === button);
+      item.setAttribute("aria-pressed", String(item === button));
+    });
+
+    projectCards.forEach((card) => {
+      card.hidden = filter !== "all" && !card.dataset.tags.split(" ").includes(filter);
+    });
+  });
+});

@@ -995,3 +995,411 @@ h3 {
   font-size: 0.82rem;
   font-weight: 600;
 }
+
+/* Projects section */
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.project-filter {
+  padding: 9px 18px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.project-filter:hover {
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.project-filter.active {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: var(--bg);
+}
+
+.project-grid {
+  align-items: stretch;
+  gap: 20px;
+}
+
+.project-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 28px;
+  border-radius: 14px;
+}
+
+.project-card[hidden] {
+  display: none;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--green), var(--accent));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 700ms ease var(--delay, 0ms);
+}
+
+.project-card.visible::before {
+  transform: scaleX(1);
+}
+
+.project-card.reveal {
+  transition: opacity 600ms ease var(--delay, 0ms), transform 600ms ease var(--delay, 0ms), border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.project-card.reveal.visible:hover {
+  transform: translateY(-6px);
+  transition-delay: 0ms;
+  box-shadow: 0 22px 55px rgba(8, 20, 35, 0.28);
+}
+
+.project-head {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.project-head h3 {
+  margin: 0 0 6px;
+  font-size: 1.18rem;
+  line-height: 1.25;
+}
+
+.project-card .project-icon {
+  display: grid;
+  width: 64px;
+  height: 64px;
+  margin: 0;
+  place-items: center;
+  border-radius: 16px;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--primary) 26%, var(--surface)), color-mix(in srgb, var(--green) 16%, var(--surface)));
+  color: var(--primary);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--primary) 35%, transparent);
+  transition: transform 280ms ease;
+}
+
+.project-card .project-icon svg {
+  width: 36px;
+  height: 36px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.project-card:hover .project-icon {
+  transform: rotate(-6deg) scale(1.08);
+}
+
+.project-card .project-number {
+  align-self: start;
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.project-card .project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.project-where {
+  color: var(--primary);
+}
+
+.project-card .project-lead {
+  margin: 0 0 12px;
+  color: var(--text);
+}
+
+.project-points {
+  margin: 0 0 22px;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.project-points li::marker {
+  color: var(--accent);
+}
+
+.project-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: auto 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-chips li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 12px 5px 5px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface-strong);
+  font-size: 0.8rem;
+  font-weight: 700;
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.project-chips li:hover {
+  transform: translateY(-3px);
+  border-color: var(--primary);
+}
+
+.chip-icon {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.chip-icon img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.chip-icon b {
+  color: #0e4c68;
+  font-size: 0.68rem;
+}
+
+@media (max-width: 920px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .project-card {
+    padding: 20px;
+  }
+
+  .project-head {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .project-card .project-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .project-card .project-number {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-card,
+  .project-card::before,
+  .project-card .project-icon,
+  .project-chips li,
+  .project-filter {
+    transition: none !important;
+  }
+}
+
+/* Education section */
+.education-grid {
+  gap: 20px;
+}
+
+.education-card {
+  position: relative;
+  overflow: hidden;
+  gap: 20px;
+  padding: 28px;
+  border-radius: 14px;
+}
+
+.education-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--primary), var(--green), var(--accent));
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 700ms ease var(--delay, 0ms);
+}
+
+.education-card.visible::before {
+  transform: scaleY(1);
+}
+
+.education-card.reveal {
+  transition: opacity 600ms ease var(--delay, 0ms), transform 600ms ease var(--delay, 0ms), border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.education-card.reveal.visible:hover {
+  transform: translateY(-6px);
+  transition-delay: 0ms;
+  box-shadow: 0 22px 55px rgba(8, 20, 35, 0.28);
+}
+
+.education-featured {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--primary) 16%, var(--surface)), var(--surface) 62%);
+}
+
+.education-card .education-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--primary) 26%, var(--surface)), color-mix(in srgb, var(--green) 16%, var(--surface)));
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--primary) 35%, transparent);
+  transition: transform 280ms ease;
+}
+
+.education-icon svg {
+  width: 36px;
+  height: 36px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.education-card:hover .education-icon {
+  transform: rotate(-6deg) scale(1.08);
+}
+
+.education-body {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  flex-direction: column;
+}
+
+.education-card .education-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 10px;
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.education-card .education-date {
+  margin: 0;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--primary) 16%, transparent);
+}
+
+.education-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.18rem;
+  line-height: 1.3;
+}
+
+.education-featured h3 {
+  font-size: 1.5rem;
+}
+
+.education-card .education-text {
+  margin: 0 0 18px;
+}
+
+@media (max-width: 920px) {
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .education-card {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .education-card,
+  .education-card::before,
+  .education-card .education-icon {
+    transition: none !important;
+  }
+}
+
+
+/* Same content width in every section */
+:root {
+  --content: 1200px;
+}
+
+.site-header,
+.section,
+.site-footer {
+  padding-inline: max(clamp(20px, 5vw, 72px), calc((100% - var(--content)) / 2));
+}
+
+.timeline,
+.education-grid,
+.skills-grid,
+.project-grid {
+  width: 100%;
+  max-width: var(--content);
+}
+
+.skill-wide {
+  grid-column: 1 / -1;
+}
+
+.timeline-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline-card .timeline-tech li {
+  padding: 5px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface-strong);
+  color: var(--text);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.project-grid .project-card:last-child:nth-of-type(odd) {
+  grid-column: 1 / -1;
+}

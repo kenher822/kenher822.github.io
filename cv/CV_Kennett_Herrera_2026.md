@@ -64,6 +64,16 @@ Sistema de trabajo para desarrollo de software con Claude Code y Codex: reglas y
 - Depuracion de informacion grafica y alfanumerica.
 - Soporte tecnico a equipos operativos y procesos de campo.
 
+## Educación y Certificaciones
+
+- Ingeniero en Sistemas, Universidad Nacional de Ingeniería, 2000 - 2004.
+- Microsoft Certified: Azure Fundamentals, Microsoft, 2023.
+- Scrum Foundation Professional Certificate (SFPC), CertiProf, 2023.
+- Creación de geoportales con QGIS, PostGIS, GeoServer y Leaflet, CAEG, 2023.
+- PCEP, Certified Entry-Level Python Programmer, 2022.
+- Diplomado en Desarrollo Ágil de Aplicaciones Web, UPOLI, 2017.
+- Técnico Medio Operador de Computadoras.
+
 ## Skills Tecnicas
 
 **Desarrollo:** Go, C#, .NET, React, TypeScript, JavaScript, HTML, CSS, Python, FastAPI, APIs REST, microservicios.  
