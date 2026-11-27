@@ -5,7 +5,7 @@ Correo: kenher822@gmail.com
 
 ## Perfil Profesional
 
-Ingeniero en Sistemas con más de 20 años en tecnología. Desde 2023 construyo servicios en Go y .NET e interfaces en React y TypeScript sobre Azure, con desarrollo asistido por IA, y avanzo hacia productos con inteligencia artificial.
+Ingeniero en Sistemas con más de 20 años en tecnología. Desde 2023 construyo servicios en Go y .NET e interfaces en React y TypeScript sobre Azure. Trabajo a diario con agentes de programación (Claude Code y Codex) y he diseñado el sistema que los guía, con revisión cruzada y aprobación humana. Avanzo hacia productos con inteligencia artificial.
 
 ## Experiencia Reciente
 
@@ -26,12 +26,9 @@ Ingeniero en Sistemas con más de 20 años en tecnología. Desde 2023 construyo 
 ### IA aplicada al desarrollo de software
 
 **Agentes, MCPs, reglas y automatizacion tecnica**  
-**2025 - Actualidad**
+**Oct. 2025 - Actualidad**
 
-- Uso de asistentes de desarrollo con contexto de repositorios, reglas tecnicas y comandos operativos.
-- Manejo de MCPs para conectar herramientas, documentacion, repositorios y flujos de trabajo.
-- Creacion y uso de skills, rules y prompts tecnicos para analisis de codigo, documentacion y soporte.
-- Apoyo a troubleshooting, migraciones, revision de cambios, generacion de entregables y estandarizacion.
+Sistema de trabajo para desarrollo de software con Claude Code y Codex: reglas y comandos reutilizables, agentes especializados (revisión de regresiones, rendimiento, incidentes, pruebas y documentación), flujo de especificación, construcción y verificación, coordinación entre agentes, revisión independiente y control humano. Aplicado en Hypernova Labs y en proyectos personales.
 
 ## Experiencia Profesional Anterior
 
