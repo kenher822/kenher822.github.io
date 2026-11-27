@@ -1403,3 +1403,208 @@ h3 {
 .project-grid .project-card:last-child:nth-of-type(odd) {
   grid-column: 1 / -1;
 }
+
+/* Experience and skills */
+.exp-head,
+.skill-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.exp-head > div {
+  min-width: 0;
+}
+
+.exp-head h3 {
+  margin: 4px 0 0;
+}
+
+.exp-head .company-heading {
+  margin: 4px 0 0;
+}
+
+.exp-icon {
+  display: grid;
+  flex: 0 0 auto;
+  width: 64px;
+  height: 64px;
+  place-items: center;
+  border-radius: 16px;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--primary) 26%, var(--surface)), color-mix(in srgb, var(--green) 16%, var(--surface)));
+  color: var(--primary);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--primary) 35%, transparent);
+  transition: transform 280ms ease;
+}
+
+.exp-icon svg {
+  width: 36px;
+  height: 36px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.timeline-card:hover .exp-icon,
+.skill-card:hover .exp-icon {
+  transform: rotate(-6deg) scale(1.08);
+}
+
+.timeline-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.timeline-card::before,
+.skill-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--green), var(--accent));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 700ms ease var(--delay, 0ms);
+}
+
+.timeline-item.visible .timeline-card::before,
+.skill-card.visible::before {
+  transform: scaleX(1);
+}
+
+.timeline-card .project-chips {
+  margin-top: 18px;
+}
+
+.timeline-card .project-chips li {
+  color: var(--text);
+}
+
+.timeline-card .experience-focus-grid {
+  margin-top: 18px;
+}
+
+.skills-grid {
+  gap: 20px;
+}
+
+.skill-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.skill-card[hidden] {
+  display: none;
+}
+
+.skill-head h3 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.skill-card > p {
+  margin: 0 0 18px;
+}
+
+.skill-card.reveal {
+  transition: opacity 600ms ease var(--delay, 0ms), transform 600ms ease var(--delay, 0ms), border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.skill-card.reveal.visible:hover {
+  transform: translateY(-6px);
+  transition-delay: 0ms;
+  box-shadow: 0 22px 55px rgba(8, 20, 35, 0.28);
+}
+
+@media (max-width: 560px) {
+  .exp-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .exp-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .exp-icon,
+  .timeline-card::before,
+  .skill-card,
+  .skill-card::before {
+    transition: none !important;
+  }
+}
+
+/* Icon-only technology lists */
+.project-chips.icon-only {
+  gap: 8px;
+}
+
+.project-chips.icon-only li {
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+.project-chips.icon-only .chip-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.project-chips.icon-only img {
+  width: 17px;
+  height: 17px;
+}
+
+.skill-card .project-chips.icon-only {
+  gap: 12px;
+}
+
+.skill-card .project-chips.icon-only .chip-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.skill-card .project-chips.icon-only img {
+  width: 24px;
+  height: 24px;
+}
+
+.project-card .project-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+}
+
+.project-card .project-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+/* Softer icon background and smaller skill icons */
+.chip-icon {
+  background: color-mix(in srgb, #ffffff 72%, var(--surface));
+}
+
+.skill-card .project-chips.icon-only {
+  gap: 10px;
+}
+
+.skill-card .project-chips.icon-only .chip-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.skill-card .project-chips.icon-only img {
+  width: 19px;
+  height: 19px;
+}
